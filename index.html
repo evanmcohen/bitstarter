@@ -47,27 +47,26 @@
         font-size: 18px;
         line-height: 30px;
       }
-      
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
+
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+        
+      .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .video {
-        /*internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
+      .statistics h3, .statistics p {
+        color: white;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
+
     </style>
   </head>
   <body>
@@ -115,9 +114,9 @@
 	  <p class="lead">One sentence description.</p>
 	</div>
       </div>
-      <div class="row pitch">
-	<div class="span6 video">
-	  Video
+      <div class="row-fluid pitch">
+	<div class="span5 offset1 video">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
 	<div class="span6">
 	  <div class="thermometer">
